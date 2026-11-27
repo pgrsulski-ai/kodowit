@@ -1,0 +1,3 @@
+okno("Powitanie", 400, 250)
+etykieta("opis", "Witaj w KODOWIT")
+gui_start()

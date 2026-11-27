@@ -1,0 +1,2 @@
+zmienna m = importuj_modul("pomocniczy.kodowit")
+wypisz(m.podwoj(21))

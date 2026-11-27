@@ -1,0 +1,2 @@
+zmienna n = 3
+dopoki n > 0 { wypisz(n) n = n - 1 }

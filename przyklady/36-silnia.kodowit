@@ -1,0 +1,2 @@
+funkcja f(n) { jezeli n <= 1 { zwroc 1 } zwroc n * f(n-1) }
+wypisz(f(5))

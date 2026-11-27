@@ -1,0 +1,3 @@
+klasa Produkt { zmienna cena = 0 funkcja konstruktor(c) { ja.cena=c } }
+zmienna p = Produkt(25)
+wypisz(p.cena)

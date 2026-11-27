@@ -1,0 +1,3 @@
+zmienna a = 0
+zmienna b = 1
+dla i w zakres(6) { wypisz(a) zmienna c = a+b a=b b=c }

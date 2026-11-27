@@ -1,0 +1,1 @@
+sprobuj { wypisz(1/0) } przechwyc(e) { wypisz("Blad") }

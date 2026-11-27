@@ -1,0 +1,2 @@
+zmienna a = zadanie("wypisz(6*7)")
+wypisz(oczekuj(a))

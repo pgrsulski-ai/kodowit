@@ -1,0 +1,3 @@
+klasa Licznik { zmienna n = 0 funkcja dodaj(x) { ja.n = ja.n+x zwroc ja.n } }
+zmienna l = Licznik()
+wypisz(l.dodaj(5))

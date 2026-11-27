@@ -1,0 +1,4 @@
+klasa A { funkcja cena() { zwroc 10 } }
+klasa B dziedziczy A { funkcja cena() { zwroc 20 } }
+zmienna b = B()
+wypisz(b.cena())

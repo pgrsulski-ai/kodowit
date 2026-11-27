@@ -1,0 +1,2 @@
+zmienna o = obiekt([["punkty", 42]])
+wypisz(json_wczytaj(json_zapisz(o))["punkty"])

@@ -1,0 +1,2 @@
+zmienna punkty = 80
+jezeli punkty >= 50 { wypisz("Zaliczone") } inaczej { wypisz("Poprawa") }

@@ -1,0 +1,2 @@
+# Wersja dotychczas używana w CI; nie jest potwierdzona jako wolna od CVE.
+pyinstaller==6.11.1

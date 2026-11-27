@@ -1,0 +1,368 @@
+[
+  {
+    "file": "01-powitanie.kodowit",
+    "expected": [
+      "Witaj, KODOWIT!"
+    ],
+    "flags": ""
+  },
+  {
+    "file": "02-zakupy.kodowit",
+    "expected": [
+      48
+    ],
+    "flags": ""
+  },
+  {
+    "file": "03-rabat.kodowit",
+    "expected": [
+      170
+    ],
+    "flags": ""
+  },
+  {
+    "file": "04-vat.kodowit",
+    "expected": [
+      123
+    ],
+    "flags": ""
+  },
+  {
+    "file": "05-pole-prostokata.kodowit",
+    "expected": [
+      40
+    ],
+    "flags": ""
+  },
+  {
+    "file": "06-objetosc.kodowit",
+    "expected": [
+      60
+    ],
+    "flags": ""
+  },
+  {
+    "file": "07-temperatura.kodowit",
+    "expected": [
+      68
+    ],
+    "flags": ""
+  },
+  {
+    "file": "08-kilometry.kodowit",
+    "expected": [
+      2
+    ],
+    "flags": ""
+  },
+  {
+    "file": "09-paliwo.kodowit",
+    "expected": [
+      21
+    ],
+    "flags": ""
+  },
+  {
+    "file": "10-energia.kodowit",
+    "expected": [
+      300
+    ],
+    "flags": ""
+  },
+  {
+    "file": "11-srednia-ocen.kodowit",
+    "expected": [
+      4
+    ],
+    "flags": ""
+  },
+  {
+    "file": "12-mediana.kodowit",
+    "expected": [
+      5
+    ],
+    "flags": ""
+  },
+  {
+    "file": "13-najwieksza.kodowit",
+    "expected": [
+      12
+    ],
+    "flags": ""
+  },
+  {
+    "file": "14-najmniejsza.kodowit",
+    "expected": [
+      3
+    ],
+    "flags": ""
+  },
+  {
+    "file": "15-sortowanie.kodowit",
+    "expected": [
+      [
+        2,
+        5,
+        9
+      ]
+    ],
+    "flags": ""
+  },
+  {
+    "file": "16-unikalne.kodowit",
+    "expected": [
+      [
+        1,
+        2
+      ]
+    ],
+    "flags": ""
+  },
+  {
+    "file": "17-nwd.kodowit",
+    "expected": [
+      12
+    ],
+    "flags": ""
+  },
+  {
+    "file": "18-nww.kodowit",
+    "expected": [
+      12
+    ],
+    "flags": ""
+  },
+  {
+    "file": "19-pierwiastek.kodowit",
+    "expected": [
+      9
+    ],
+    "flags": ""
+  },
+  {
+    "file": "20-potega.kodowit",
+    "expected": [
+      256
+    ],
+    "flags": ""
+  },
+  {
+    "file": "21-zaokraglenie.kodowit",
+    "expected": [
+      3.14
+    ],
+    "flags": ""
+  },
+  {
+    "file": "22-wariancja.kodowit",
+    "expected": [
+      1
+    ],
+    "flags": ""
+  },
+  {
+    "file": "23-wielkie-litery.kodowit",
+    "expected": [
+      "KODOWIT"
+    ],
+    "flags": ""
+  },
+  {
+    "file": "24-przycinanie.kodowit",
+    "expected": [
+      "tekst"
+    ],
+    "flags": ""
+  },
+  {
+    "file": "25-zamiana.kodowit",
+    "expected": [
+      "pot"
+    ],
+    "flags": ""
+  },
+  {
+    "file": "26-laczenie.kodowit",
+    "expected": [
+      "a,b"
+    ],
+    "flags": ""
+  },
+  {
+    "file": "27-wyszukiwanie.kodowit",
+    "expected": [
+      2
+    ],
+    "flags": ""
+  },
+  {
+    "file": "28-data.kodowit",
+    "expected": [
+      "2024-02-29"
+    ],
+    "flags": ""
+  },
+  {
+    "file": "29-roznica-dat.kodowit",
+    "expected": [
+      2
+    ],
+    "flags": ""
+  },
+  {
+    "file": "30-dzien-tygodnia.kodowit",
+    "expected": [
+      1
+    ],
+    "flags": ""
+  },
+  {
+    "file": "31-losowanie.kodowit",
+    "expected": [
+      true
+    ],
+    "flags": ""
+  },
+  {
+    "file": "32-probka.kodowit",
+    "expected": [
+      2
+    ],
+    "flags": ""
+  },
+  {
+    "file": "33-budzet.kodowit",
+    "expected": [
+      600
+    ],
+    "flags": ""
+  },
+  {
+    "file": "34-prog.kodowit",
+    "expected": [
+      "Zaliczone"
+    ],
+    "flags": ""
+  },
+  {
+    "file": "35-odliczanie.kodowit",
+    "expected": [
+      3,
+      2,
+      1
+    ],
+    "flags": ""
+  },
+  {
+    "file": "36-silnia.kodowit",
+    "expected": [
+      120
+    ],
+    "flags": ""
+  },
+  {
+    "file": "37-fibonacci.kodowit",
+    "expected": [
+      0,
+      1,
+      1,
+      2,
+      3,
+      5
+    ],
+    "flags": ""
+  },
+  {
+    "file": "38-tabliczka.kodowit",
+    "expected": [
+      7,
+      14,
+      21,
+      28,
+      35
+    ],
+    "flags": ""
+  },
+  {
+    "file": "39-json.kodowit",
+    "expected": [
+      42
+    ],
+    "flags": ""
+  },
+  {
+    "file": "40-licznik.kodowit",
+    "expected": [
+      5
+    ],
+    "flags": ""
+  },
+  {
+    "file": "41-produkt.kodowit",
+    "expected": [
+      25
+    ],
+    "flags": ""
+  },
+  {
+    "file": "42-dziedziczenie.kodowit",
+    "expected": [
+      20
+    ],
+    "flags": ""
+  },
+  {
+    "file": "43-wyjatek.kodowit",
+    "expected": [
+      "Blad"
+    ],
+    "flags": ""
+  },
+  {
+    "file": "44-zadania.kodowit",
+    "expected": [
+      "42"
+    ],
+    "flags": ""
+  },
+  {
+    "file": "45-modul.kodowit",
+    "expected": [
+      42
+    ],
+    "flags": "--pliki"
+  },
+  {
+    "file": "46-plik.kodowit",
+    "expected": [
+      "KODOWIT"
+    ],
+    "flags": "--pliki"
+  },
+  {
+    "file": "47-sqlite.kodowit",
+    "expected": [
+      [
+        [
+          42
+        ]
+      ]
+    ],
+    "flags": "--pliki"
+  },
+  {
+    "file": "48-okno.kodowit",
+    "expected": null,
+    "flags": "--gui"
+  },
+  {
+    "file": "49-formularz.kodowit",
+    "expected": null,
+    "flags": "--gui"
+  },
+  {
+    "file": "50-gra-2d.kodowit",
+    "expected": null,
+    "flags": "--gui"
+  }
+]

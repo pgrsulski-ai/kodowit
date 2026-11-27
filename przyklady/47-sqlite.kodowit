@@ -1,0 +1,3 @@
+baza_wykonaj("test.db", "CREATE TABLE dane (n INTEGER)")
+baza_wykonaj("test.db", "INSERT INTO dane VALUES (?)", [42])
+wypisz(baza_pobierz("test.db", "SELECT n FROM dane"))

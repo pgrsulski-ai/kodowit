@@ -1,0 +1,10 @@
+funkcja powitaj() {
+ gui_ustaw("wynik", "Witaj, " + gui_odczytaj("imie"))
+}
+okno("KODOWIT Desktop", 480, 320)
+etykieta("opis", "Podaj imię")
+pole("imie", "Anna")
+przycisk("start", "Powitaj", powitaj)
+etykieta("wynik", "")
+gui_start()
+

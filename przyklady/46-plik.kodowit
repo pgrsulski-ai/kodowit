@@ -1,0 +1,2 @@
+zapisz_plik("notatka.txt", "KODOWIT")
+wypisz(czytaj_plik("notatka.txt"))
