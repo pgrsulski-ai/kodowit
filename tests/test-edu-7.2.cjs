@@ -1,0 +1,3 @@
+const {uruchom}=require('../edu/edu-core.js');const a=require('node:assert/strict');
+for(const [s,v] of [['wypisz("A") wypisz("B")','A\nB'],['dla i w zakres(3) { wypisz("Hej") }','Hej\nHej\nHej'],['jeżeli 5 > 2 { wypisz("Tak") }','Tak'],['zmienna x = 7 wypisz(x)','7'],['wypisz(2 + 3 * 4)','14'],['wypisz(srednia([2,4,6]))','4'],['funkcja podwoj(x) { zwróć x * 2 } wypisz(podwoj(6))','12'],['funkcja suma(n) { jeżeli n <= 0 { zwróć 0 } zwróć n + suma(n - 1) } wypisz(suma(3))','6'],['zmienna x = 0 dopóki x < 3 { x = x + 1 } wypisz(x)','3']])a.equal(uruchom(s),v);
+for(const s of ['dopóki prawda {}','wypisz(1/0)','fetch("x")','wypisz([1][9])','wypisz(1','wypisz.constructor()'])a.throws(()=>uruchom(s));console.log('15 testów OK');

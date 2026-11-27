@@ -1,0 +1,9 @@
+strona "Magazyn" {
+ motyw: ciemny
+ styl: premium
+ kolor: "#8b5cf6"
+ menu { logo "Magazyn" link "Start", "#start" link "Więcej", "#oferta" }
+ sekcja "start" { gradient: "linear-gradient(135deg, #312e81, #111827)" wypełnienie: 32 zaokrąglenie: 24 nagłówek "Magazyn" tekst "Najnowsze artykuły" link "Zobacz więcej", "#oferta" }
+ sekcja "oferta" { kolumny 3 { karta "Technologia" { tekst "Nowe możliwości" } karta "Design" { tekst "Inspiracje" } karta "Poradnik" { tekst "Pierwsze kroki" } } }
+ stopka "© 2026 Magazyn"
+}

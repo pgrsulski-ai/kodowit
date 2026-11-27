@@ -1,0 +1,5 @@
+strona "Zakładki produktu" {
+ motyw: ciemny
+ nagłówek "Zakładki produktu"
+ zakładki [["Opis", "Informacje o produkcie"], ["Dane", "Parametry produktu"], ["Pomoc", "Kontakt z obsługą"]]
+}

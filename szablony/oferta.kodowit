@@ -1,0 +1,5 @@
+strona "Karty usług" {
+ motyw: ciemny
+ nagłówek "Karty usług"
+ kolumny 3 { karta "Projekt" { tekst "Plan i konsultacja" } karta "Realizacja" { tekst "Budowa rozwiązania" } karta "Wsparcie" { tekst "Pomoc po wdrożeniu" } }
+}

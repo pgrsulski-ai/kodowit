@@ -1,0 +1,7 @@
+strona "Kontakt" {
+ motyw: ciemny
+ styl: premium
+ kolor: "#8b5cf6"
+ nagłówek "Skontaktuj się" tekst "Przykładowe dane kontaktowe" karta "Biuro" { tekst "kontakt@example.com" } link "Napisz e-mail", "mailto:kontakt@example.com"
+ stopka "© 2026 Kontakt"
+}

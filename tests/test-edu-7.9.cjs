@@ -1,0 +1,1 @@
+const assert=require('node:assert/strict');const rows=require('../edu/edu-curriculum.js');const {uruchom}=require('../edu/edu-core.js');let n=0;for(const rs of Object.values(rows))for(const r of rs){assert.equal(uruchom(r[2]),r[4][r[5]],r[0]);n++;}assert.equal(n,88);console.log(n+' nowych przykładów OK');

@@ -1,0 +1,5 @@
+strona "Sekcja FAQ" {
+ motyw: ciemny
+ nagłówek "Sekcja FAQ"
+ faq [["Czy KODOWIT jest darmowy?", "Tak, podstawowe Studio jest darmowe."], ["Czy potrzebuję konta?", "Nie."]]
+}

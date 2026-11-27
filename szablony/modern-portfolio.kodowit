@@ -1,0 +1,21 @@
+strona("Mono — portfolio") {
+    motyw: ciemny
+    styl: premium
+    kolor: "#38bdf8"
+    sekcja "start" {
+        gradient: "linear-gradient(135deg,#082f49,#164e63)"
+        wypełnienie: 40
+        zaokrąglenie: 24
+        nagłówek("Mono — portfolio")
+        tekst("Wybrane realizacje i doświadczenie")
+        link "Zobacz więcej", "#oferta"
+    }
+    sekcja "oferta" {
+        kolumny 3 {
+            karta "Projekt 01" { tekst("Identyfikacja wizualna") }
+            karta "Projekt 02" { tekst("Aplikacja internetowa") }
+            karta "Projekt 03" { tekst("Kampania cyfrowa") }
+        }
+    }
+    stopka "© 2026 Mono — portfolio"
+}

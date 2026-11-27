@@ -1,0 +1,21 @@
+strona("Orbit — SaaS") {
+    motyw: ciemny
+    styl: premium
+    kolor: "#818cf8"
+    sekcja "start" {
+        gradient: "linear-gradient(135deg,#172554,#312e81)"
+        wypełnienie: 40
+        zaokrąglenie: 24
+        nagłówek("Orbit — SaaS")
+        tekst("Zarządzaj pracą w jednym miejscu")
+        link "Zobacz więcej", "#oferta"
+    }
+    sekcja "oferta" {
+        kolumny 3 {
+            karta "Projekty" { tekst("Planuj i organizuj zadania") }
+            karta "Zespół" { tekst("Współpracuj bez chaosu") }
+            karta "Wyniki" { tekst("Śledź postępy") }
+        }
+    }
+    stopka "© 2026 Orbit — SaaS"
+}

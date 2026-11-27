@@ -1,0 +1,9 @@
+strona "Portfolio" {
+ motyw: ciemny
+ styl: premium
+ kolor: "#8b5cf6"
+ menu { logo "Portfolio" link "Start", "#start" link "Więcej", "#oferta" }
+ sekcja "start" { gradient: "linear-gradient(135deg, #312e81, #111827)" wypełnienie: 32 zaokrąglenie: 24 nagłówek "Portfolio" tekst "Wybrane realizacje" link "Zobacz więcej", "#oferta" }
+ sekcja "oferta" { kolumny 3 { karta "Projekt A" { tekst "Identyfikacja" } karta "Projekt B" { tekst "Strona WWW" } karta "Projekt C" { tekst "Ilustracje" } } }
+ stopka "© 2026 Portfolio"
+}

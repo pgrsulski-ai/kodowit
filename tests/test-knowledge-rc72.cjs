@@ -1,0 +1,1 @@
+const a=require('node:assert/strict'),k=require('../ai/knowledge.js'),t=require('../ai/knowledge-templates.js'),c=require('../compiler.js');a.equal(t.length,26);for(const x of t)c.compile(x.kod);a.equal(k.select('modern portfolio',t)[0].id,'modern-portfolio');console.log('RC72 OK');

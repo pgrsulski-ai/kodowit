@@ -1,0 +1,5 @@
+strona "Panel wskaźników" {
+ motyw: ciemny
+ nagłówek "Panel wskaźników"
+ kolumny 2 { karta "Realizacja" { postęp 75 } karta "Wyniki" { wykres [["A", 30], ["B", 70]] } }
+}

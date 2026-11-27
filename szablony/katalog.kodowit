@@ -1,0 +1,9 @@
+strona "Katalog produktów" {
+ motyw: ciemny
+ styl: premium
+ kolor: "#8b5cf6"
+ menu { logo "Katalog produktów" link "Start", "#start" link "Więcej", "#oferta" }
+ sekcja "start" { gradient: "linear-gradient(135deg, #312e81, #111827)" wypełnienie: 32 zaokrąglenie: 24 nagłówek "Katalog produktów" tekst "Poznaj kolekcję" link "Zobacz więcej", "#oferta" }
+ sekcja "oferta" { kolumny 3 { karta "Model A" { tekst "99 zł" } karta "Model B" { tekst "149 zł" } karta "Model C" { tekst "199 zł" } } }
+ stopka "© 2026 Katalog produktów"
+}

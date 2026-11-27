@@ -1,0 +1,3 @@
+const assert=require('node:assert/strict'),{execFileSync}=require('node:child_process'),{eksportKodowit}=require('../eksport.js');
+for(const [s,out] of [['funkcja f(x) { zwróć x*2 } wypisz(f(4))','8'],['jeżeli 2 < 3 { wypisz("tak") } inaczej { wypisz("nie") }','tak'],['zmienna a = [1,2,3] wypisz(a[-1])','3'],['zmienna żółć = 7 wypisz(żółć)','7']])for(const [t,cmd,args] of [['python','python3',['-c']],['javascript','node',['-e']]])assert.equal(execFileSync(cmd,[...args,eksportKodowit(s,t)],{encoding:'utf8',timeout:3000}).trim(),out);
+assert.throws(()=>eksportKodowit('wypisz(2/3)','python'));console.log('Eksport: 8 uruchomień i odrzucenie nieobsługiwanej składni');

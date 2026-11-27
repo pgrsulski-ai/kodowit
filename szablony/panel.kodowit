@@ -1,0 +1,9 @@
+strona "Panel analityczny" {
+ motyw: ciemny
+ styl: premium
+ kolor: "#8b5cf6"
+ menu { logo "Panel analityczny" link "Start", "#start" link "Więcej", "#oferta" }
+ sekcja "start" { gradient: "linear-gradient(135deg, #312e81, #111827)" wypełnienie: 32 zaokrąglenie: 24 nagłówek "Panel analityczny" tekst "Przykładowe dane demonstracyjne" link "Zobacz więcej", "#oferta" }
+ sekcja "oferta" { kolumny 3 { karta "Użytkownicy" { tekst "1280" } karta "Sprzedaż" { tekst "24 500 zł" } karta "Projekty" { tekst "12" } } }
+ stopka "© 2026 Panel analityczny"
+}

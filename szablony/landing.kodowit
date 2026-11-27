@@ -1,0 +1,9 @@
+strona "Start produktu" {
+ motyw: ciemny
+ styl: premium
+ kolor: "#8b5cf6"
+ menu { logo "Start produktu" link "Start", "#start" link "Więcej", "#oferta" }
+ sekcja "start" { gradient: "linear-gradient(135deg, #312e81, #111827)" wypełnienie: 32 zaokrąglenie: 24 nagłówek "Start produktu" tekst "Poznaj nowy produkt" link "Zobacz więcej", "#oferta" }
+ sekcja "oferta" { kolumny 3 { karta "Prosto" { tekst "Łatwa obsługa" } karta "Szybko" { tekst "Oszczędność czasu" } karta "Elastycznie" { tekst "Dopasuj do siebie" } } }
+ stopka "© 2026 Start produktu"
+}

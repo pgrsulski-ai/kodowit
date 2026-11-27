@@ -1,0 +1,7 @@
+strona "Kalkulator zakupów" {
+ motyw: ciemny
+ styl: premium
+ kolor: "#2563eb"
+ nagłówek "Koszt zakupu" pole "cena", "Cena (zł)" pole "ilosc", "Ilość" przycisk "Oblicz" { kliknięcie { ustaw("suma", odczytaj("cena") * odczytaj("ilosc")) } } wynik "suma", "Razem (zł)"
+ stopka "© 2026 Kalkulator zakupów"
+}

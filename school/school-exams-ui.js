@@ -1,0 +1,12 @@
+'use strict';
+const $=id=>document.getElementById(id);let s=School.empty(),exam={title:'',questions:[]},active=null,result=null;
+function act(fn){try{fn();$('status').textContent='OK';}catch(e){$('status').textContent=e.message;}}
+act(()=>{const raw=localStorage.getItem('kodowit-school-v1');if(raw)s=JSON.parse(raw);for(const p of s.students){const o=document.createElement('option');o.value=p.name;o.textContent=p.name;$('student').append(o);} });
+function drawStudent(){if(!$('student').value){$('tasks').textContent='Brak profili. Dodaj profil w Edu School.';return;}const p=Exams.student(s,$('student').value);$('tasks').textContent=p.tasks.map(t=>`${t.done?'✓':'○'} ${t.id}`).join('\n')+`\nPunkty: ${p.points} · ${p.badge}`;}
+$('student').onchange=()=>act(drawStudent);act(drawStudent);
+function draw(){ $('list').textContent=exam.questions.map((q,i)=>`${i+1}. ${q.prompt}`).join('\n'); }
+$('add').onclick=()=>act(()=>{const n={title:$('title').value,questions:[...exam.questions,{prompt:$('prompt').value,answer:$('answer').value}]};Exams.validate(n);exam=n;draw();$('prompt').value='';$('answer').value='';});
+$('reset').onclick=()=>{if(confirm('Usunąć bieżący sprawdzian?')){exam={title:'',questions:[]};active=null;result=null;draw();$('questions').replaceChildren();$('grade').disabled=true;$('export').disabled=true;$('result').textContent='';}};
+$('start').onclick=()=>act(()=>{active=JSON.parse(JSON.stringify(Exams.validate({...exam,title:$('title').value})));result=null;$('export').disabled=true;$('result').textContent='';$('questions').replaceChildren();for(const q of active.questions){const l=document.createElement('label'),t=document.createElement('textarea');l.textContent=q.prompt;t.maxLength=1000;l.append(t);$('questions').append(l);}$('grade').disabled=false;});
+$('grade').onclick=()=>act(()=>{result={title:active.title,alias:$('student').value,...Exams.grade(active,[...$('questions').querySelectorAll('textarea')].map(t=>t.value))};$('result').textContent=`Wynik: ${result.points}/${result.total}\n`+result.results.map((v,i)=>`${i+1}: ${v?'poprawnie':'błędnie'}`).join('\n');$('export').disabled=false;});
+$('export').onclick=()=>act(()=>{if(!result)throw Error('Brak wyniku');const u=URL.createObjectURL(new Blob([JSON.stringify(result,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=u;a.download='wynik-probny.json';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000);});

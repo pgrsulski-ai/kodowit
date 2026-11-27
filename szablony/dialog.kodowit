@@ -1,0 +1,6 @@
+strona "Okno i komunikat" {
+ motyw: ciemny
+ nagłówek "Okno i komunikat"
+ powiadomienie "Witaj w aplikacji!"
+ okno ["Informacje", "To przykładowe okno dialogowe."]
+}

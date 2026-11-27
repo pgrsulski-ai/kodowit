@@ -1,0 +1,21 @@
+strona("Pulse — produkt") {
+    motyw: ciemny
+    styl: premium
+    kolor: "#34d399"
+    sekcja "start" {
+        gradient: "linear-gradient(135deg,#064e3b,#134e4a)"
+        wypełnienie: 40
+        zaokrąglenie: 24
+        nagłówek("Pulse — produkt")
+        tekst("Poznaj nowy sposób organizacji dnia")
+        link "Zobacz więcej", "#oferta"
+    }
+    sekcja "oferta" {
+        kolumny 3 {
+            karta "Prosty start" { tekst("Gotowy w kilka minut") }
+            karta "Elastyczność" { tekst("Dopasuj do siebie") }
+            karta "Przejrzystość" { tekst("Wszystko pod kontrolą") }
+        }
+    }
+    stopka "© 2026 Pulse — produkt"
+}

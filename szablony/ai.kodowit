@@ -1,0 +1,9 @@
+strona "Asystent AI" {
+ motyw: ciemny
+ styl: premium
+ kolor: "#8b5cf6"
+ menu { logo "Asystent AI" link "Start", "#start" link "Więcej", "#oferta" }
+ sekcja "start" { gradient: "linear-gradient(135deg, #312e81, #111827)" wypełnienie: 32 zaokrąglenie: 24 nagłówek "Asystent AI" tekst "Makieta interfejsu bez połączenia z modelem" link "Zobacz więcej", "#oferta" }
+ sekcja "oferta" { kolumny 3 { karta "Czat" { tekst "Rozmowa" } karta "Dokumenty" { tekst "Analiza" } karta "Grafika" { tekst "Generowanie" } } }
+ stopka "© 2026 Asystent AI"
+}

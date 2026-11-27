@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "packages": [
+    {
+      "name": "matematyka",
+      "version": "1.0.0",
+      "license": "MIT",
+      "description": "Przykładowa funkcja podwajania",
+      "sha256": "4e67b0415d7d57842f582520cb5d545570edf5e8c775d1645dd60fbea8406729"
+    }
+  ]
+}

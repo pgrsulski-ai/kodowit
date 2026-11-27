@@ -1,0 +1,9 @@
+strona "Nova Studio" {
+ motyw: ciemny
+ styl: premium
+ kolor: "#8b5cf6"
+ menu { logo "Nova Studio" link "Start", "#start" link "Więcej", "#oferta" }
+ sekcja "start" { gradient: "linear-gradient(135deg, #312e81, #111827)" wypełnienie: 32 zaokrąglenie: 24 nagłówek "Nova Studio" tekst "Projektujemy rozwiązania dla biznesu" link "Zobacz więcej", "#oferta" }
+ sekcja "oferta" { kolumny 3 { karta "Strategia" { tekst "Plan działania" } karta "Design" { tekst "Nowoczesny wygląd" } karta "Wdrożenie" { tekst "Gotowa witryna" } } }
+ stopka "© 2026 Nova Studio"
+}

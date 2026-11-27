@@ -1,0 +1,3 @@
+const assert=require('node:assert/strict'),api=require('../shared/code-files.js');
+const file=(name,s)=>({name,size:Buffer.byteLength(s),arrayBuffer:async()=>new TextEncoder().encode(s).buffer});
+(async()=>{assert.equal(await api.read(file('lekcja.kodowit','wypisz("żółć")')),'wypisz("żółć")');assert.equal(await api.read(file('a.txt','')),'');await assert.rejects(api.read(file('a.json','{}')));await assert.rejects(api.read(file('a.kodowit','\0')));await assert.rejects(api.read(file('a.kodowit','a'.repeat(100001))));assert.equal(api.name('żółć.txt'),'żółć.kodowit');assert.equal(api.name('../a.kodowit'),'---a.kodowit');console.log('7 assertions OK')})().catch(e=>{console.error(e);process.exit(1)});

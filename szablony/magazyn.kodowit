@@ -1,0 +1,5 @@
+strona "Magazyn" {
+ motyw: ciemny
+ nagłówek "Magazyn"
+ rejestr "Produkty", ["Nazwa", "Ilość", "Cena"]
+}

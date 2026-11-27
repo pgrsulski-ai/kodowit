@@ -1,0 +1,5 @@
+strona "Cennik usług" {
+ motyw: ciemny
+ nagłówek "Cennik usług"
+ kolumny 3 { karta "Start" { tekst "29 zł / miesiąc" } karta "Pro" { tekst "59 zł / miesiąc" } karta "Firma" { tekst "99 zł / miesiąc" } }
+}

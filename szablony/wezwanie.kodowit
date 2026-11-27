@@ -1,0 +1,5 @@
+strona "Wezwanie do działania" {
+ motyw: ciemny
+ nagłówek "Wezwanie do działania"
+ sekcja "start" { gradient: "linear-gradient(135deg, #312e81, #111827)" wypełnienie: 32 zaokrąglenie: 24 nagłówek "Zacznij już dziś" tekst "Poznaj naszą ofertę" link "Kontakt", "mailto:kontakt@example.com" }
+}

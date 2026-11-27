@@ -1,0 +1,2 @@
+const assert=require('node:assert/strict');const {uruchom}=require('../edu/edu-core.js');const p=require('../edu/edu-practice.js');const { }=require('../edu/edu-turtle.js');
+const expected={junior:['Ania','Hej\nHej\nHej\nHej\nHej','Tak',null],start:['12','20','6','0\n1\n2\n3\n4'],pro:['21','15',null,'0\n2\n4\n6\n8']};let n=0;for(const [level,tasks] of Object.entries(p)){assert.equal(tasks.length,4);tasks.forEach((t,i)=>{if(expected[level][i]!==null){assert.equal(uruchom(t[1]),expected[level][i]);n++;}})}console.log(n+' solutions OK');

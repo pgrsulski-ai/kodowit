@@ -1,0 +1,4 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),p=require('../compiler.js');
+for(const f of fs.readdirSync('szablony')) new vm.Script(p.compile(fs.readFileSync('szablony/'+f,'utf8')));
+const source='/* test\n komentarz */\nwypisz(minimum([2,5]))\nwypisz(maksimum([2,5]))\nwypisz(średnia([2,4]))\nwypisz(zakres(3,1))\nwypisz(połącz([1,2],"-"))\nwypisz(podziel("a,b",","))\nwypisz(zawiera([1,2],2))\nwypisz(klucze({a:1}))\nwypisz(liczba_z("42"))\nwypisz(tekst_z(42))\nwypisz(nic)';
+const html=p.html(p.compile(source));const script=html.match(/<script>([\s\S]*)<\/script>/)[1];const log={textContent:''};vm.runInNewContext(script,{document:{querySelector:s=>s==='pre'?log:{}}});console.log(log.textContent);assert.equal(log.textContent,'2\n5\n3\n3,2,1\n1-2\na,b\nprawda\na\n42\n42\nnull\n');assert.throws(()=>p.compile('/* x'),/Niezamknięty/);console.log('OK: 26 szablonów, 11 wyników, błąd komentarza');

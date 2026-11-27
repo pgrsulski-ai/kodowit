@@ -1,0 +1,30 @@
+{
+  "Funkcja": {
+    "prefix": "funkcja",
+    "body": [
+      "funkcja ${1:nazwa}(${2:argument}) {",
+      "    ${0:zwroc argument}",
+      "}"
+    ]
+  },
+  "Warunek": {
+    "prefix": "jezeli",
+    "body": [
+      "jezeli ${1:prawda} {",
+      "    $0",
+      "}"
+    ]
+  },
+  "Pętla": {
+    "prefix": "dla",
+    "body": [
+      "dla ${1:i} w zakres(${2:10}) {",
+      "    $0",
+      "}"
+    ]
+  },
+  "Wypisz": {
+    "prefix": "wypisz",
+    "body": "wypisz(${1:\"Witaj\"})"
+  }
+}

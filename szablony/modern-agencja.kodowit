@@ -1,0 +1,21 @@
+strona("Forma — agencja") {
+    motyw: ciemny
+    styl: premium
+    kolor: "#fb7185"
+    sekcja "start" {
+        gradient: "linear-gradient(135deg,#4c0519,#312e81)"
+        wypełnienie: 40
+        zaokrąglenie: 24
+        nagłówek("Forma — agencja")
+        tekst("Projektujemy marki i doświadczenia cyfrowe")
+        link "Zobacz więcej", "#oferta"
+    }
+    sekcja "oferta" {
+        kolumny 3 {
+            karta "Strategia" { tekst("Od pomysłu do planu") }
+            karta "Design" { tekst("Wyrazista identyfikacja") }
+            karta "Web" { tekst("Responsywne witryny") }
+        }
+    }
+    stopka "© 2026 Forma — agencja"
+}

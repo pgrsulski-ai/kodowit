@@ -1,0 +1,5 @@
+strona "Rozwijane opcje" {
+ motyw: ciemny
+ nagłówek "Rozwijane opcje"
+ rozwijane [["Dostawa", "Informacje o wysyłce"], ["Zwroty", "Informacje o zwrotach"]]
+}

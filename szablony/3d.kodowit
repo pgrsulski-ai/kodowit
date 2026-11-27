@@ -1,0 +1,12 @@
+strona "Galeria 3D" {
+ motyw: ciemny
+ nagłówek "Nowe bryły 3D"
+ scena "Galeria" {
+ piramida -3, 0, 0, 2, 3, 2, "#ef4444"
+ torus 0, 0, 0, 2, 1, 2, "#38bdf8"
+ sześcian 3, 0, 0, 2, 2, 2, "#a78bfa"
+ osie: prawda
+ siatka: prawda
+ obrót: prawda
+ }
+}

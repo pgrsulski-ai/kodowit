@@ -1,0 +1,37 @@
+{
+  "scopeName": "source.kodowit",
+  "name": "KODOWIT",
+  "patterns": [
+    {
+      "name": "comment.line.kodowit",
+      "match": "(?://|#).*$"
+    },
+    {
+      "name": "string.quoted.double.kodowit",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.kodowit",
+          "match": "\\\\."
+        }
+      ]
+    },
+    {
+      "name": "keyword.control.kodowit",
+      "match": "(?<![\\p{L}\\p{N}_])(?:klasa|ja|dziedziczy|dziedzicz|konstruktor|sprobuj|spróbuj|przechwyc|zglos|zgłoś|dla|dopoki|dopóki|funkcja|inaczej|jesli|jezeli|jeśli|jeżeli|lub|nie|oraz|stan|w|zmienna|zwroc|zwróć)(?![\\p{L}\\p{N}_])"
+    },
+    {
+      "name": "constant.language.kodowit",
+      "match": "(?<![\\p{L}\\p{N}_])(?:prawda|falsz|fałsz|nic)(?![\\p{L}\\p{N}_])"
+    },
+    {
+      "name": "support.function.kodowit",
+      "match": "(?<![\\p{L}\\p{N}_])(?:bezwzgledna|calkowita|cosinus|dlugosc|dodaj_dni|dzien|dzien_tygodnia|dzisiaj|długość|euler|importuj_pakiet|json_wczytaj|json_zapisz|klucze|konczy_sie|licz_wystapienia|liczba|logarytm|losowa|losuj|maksimum|male_litery|mediana|miesiac|minimum|nwd|nww|obiekt|odchylenie|odwroc|pi|pierwiastek|podloga|podziel|polacz|potega|probka|przytnij|rok|roznica_dni|sinus|sortuj|sortuj_malejaco|srednia|sufit|suma|tangens|tekst|teraz|unikalne|wariancja|wielkie_litery|wybierz_losowo|wypisz|zaczyna_sie|zakres|zamien|zaokraglij|zawiera|znajdz)(?![\\p{L}\\p{N}_])"
+    },
+    {
+      "name": "constant.numeric.kodowit",
+      "match": "\\b\\d+(?:\\.\\d+)?\\b"
+    }
+  ]
+}

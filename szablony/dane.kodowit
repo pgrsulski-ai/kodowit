@@ -1,0 +1,7 @@
+zmienna liczby = [2, 4, 6]
+zmienna osoba = {imie: "Anna", wiek: 25}
+dla każdy liczba w liczby { wypisz(liczba) }
+dla i od 1 do 3 { wypisz(i) }
+wypisz(suma(liczby))
+wypisz(osoba["imie"])
+strona "Dane" { lista liczby tabela [["Nazwa", "Cena"], ["Chleb", 5]] poletekstowe "imie", "Imię" }

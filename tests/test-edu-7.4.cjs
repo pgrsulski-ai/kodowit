@@ -1,0 +1,3 @@
+const assert=require('node:assert/strict'),{uruchom}=require('../edu/edu-core.js'),{zolw}=require('../edu/edu-turtle.js'),{kod}=require('../edu/edu-blocks.js');
+let g=zolw();uruchom('dla i w zakres(4) { naprzod(100) prawo(90) }',g);assert.equal(g.linie.length,4);assert.ok(Math.abs(g.linie[3][2])<1e-8&&Math.abs(g.linie[3][3])<1e-8);
+g=zolw();uruchom('podnies() naprzod(10) opusc() kolor("zielony") wstecz(5)',g);assert.deepEqual(g.linie,[[10,0,5,0,'#16a34a']]);assert.throws(()=>uruchom('kolor("bad")',g));assert.throws(()=>uruchom('naprzod(999999)',g));assert.throws(()=>uruchom('prawo()',g));uruchom('wyczysc()',g);assert.equal(g.linie.length,0);uruchom(kod([{type:'forward',value:'20'}]),g);assert.equal(g.linie.length,1);console.log('Grafika: 8 asercji OK');

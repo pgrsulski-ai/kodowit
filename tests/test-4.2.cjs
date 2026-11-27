@@ -1,0 +1,3 @@
+const p=require('../compiler.js'),a=require('node:assert/strict'),vm=require('node:vm');
+const files={index:'importuj "menu.kodowit"\nimportuj "menu.kodowit"\nwypisz(dodaj(2))',menu:'importuj "dane.kodowit"\nfunkcja dodaj(x) { zwróć x + baza }',dane:'stała baza = 3'};
+let out=[];vm.runInNewContext(p.compileProject(files),{tick(){},print(x){out.push(x)}});a.deepEqual(out,[5]);a.throws(()=>p.compileProject({index:'importuj "brak.kodowit"'}),/Brak modułu/);a.throws(()=>p.compileProject({index:'importuj "a.kodowit"',a:'importuj "index.kodowit"'}),/Cykliczny/);console.log('OK: moduły, duplikaty, cykle, brak pliku');

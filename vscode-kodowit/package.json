@@ -1,0 +1,88 @@
+{
+  "name": "kodowit-language",
+  "displayName": "KODOWIT – język polski",
+  "description": "Obsługa KODOWIT Core w VS Code",
+  "version": "0.8.8",
+  "publisher": "kodowit-local",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "main": "./extension.js",
+  "activationEvents": [
+    "onLanguage:kodowit",
+    "onCommand:kodowit.run",
+    "onCommand:kodowit.check"
+  ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": false
+    }
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "kodowit",
+        "aliases": [
+          "KODOWIT"
+        ],
+        "extensions": [
+          ".kodowit"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "kodowit",
+        "scopeName": "source.kodowit",
+        "path": "./syntaxes/kodowit.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "kodowit",
+        "path": "./snippets/kodowit.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "kodowit.run",
+        "title": "KODOWIT: Uruchom program"
+      },
+      {
+        "command": "kodowit.check",
+        "title": "KODOWIT: Sprawdź składnię"
+      }
+    ],
+    "configuration": {
+      "title": "KODOWIT",
+      "properties": {
+        "kodowit.python": {
+          "type": "string",
+          "default": "python",
+          "description": "Ścieżka do interpretera Python",
+          "scope": "machine"
+        },
+        "kodowit.corePath": {
+          "type": "string",
+          "default": "",
+          "description": "Pełna ścieżka do core/kodowit.py",
+          "scope": "machine"
+        }
+      }
+    },
+    "menus": {
+      "editor/title": [
+        {
+          "command": "kodowit.run",
+          "when": "resourceLangId == kodowit",
+          "group": "navigation"
+        }
+      ]
+    }
+  }
+}

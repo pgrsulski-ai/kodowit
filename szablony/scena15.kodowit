@@ -1,0 +1,9 @@
+strona "Scena 3D" {
+ motyw: ciemny
+ scena "Bryły" {
+ kamera: 0.6, 0.35, 65
+ siatka: prawda
+ perspektywa: prawda
+ stożek 0, 0, 0, 2, 3, 2, "#ef4444"
+ }
+}

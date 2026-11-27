@@ -1,0 +1,12 @@
+strona "Komponenty" {
+ motyw: ciemny
+ nagłówek "Interaktywne komponenty"
+ faq [["Co to KODOWIT?", "Polski język programowania."]]
+ zakładki [["Opis", "Informacje"], ["Oferta", "Nasze usługi"]]
+ wykres [["Styczeń", 30], ["Luty", 70]]
+ postęp 65
+ powiadomienie "Witaj!"
+ okno ["Informacje", "Treść okna"]
+ rozwijane [["Menu", "Opcje"]]
+ karuzela [["Zdjęcie", "https://example.com/obraz.jpg"]]
+}
