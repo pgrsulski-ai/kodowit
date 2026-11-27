@@ -1,0 +1,18 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  X-Frame-Options: SAMEORIGIN
+  X-XSS-Protection: 0
+  X-Permitted-Cross-Domain-Policies: none
+  Content-Security-Policy: object-src 'none'; base-uri 'self'; frame-ancestors 'self'; form-action 'self'; manifest-src 'self'; worker-src 'self'
+/sw.js
+  Cross-Origin-Resource-Policy: same-origin
+  Cache-Control: no-cache
+
+/*.html
+  Cache-Control: no-cache
+/compiler.js
+  Cache-Control: no-cache
+/shared/site.css
+  Cache-Control: no-cache

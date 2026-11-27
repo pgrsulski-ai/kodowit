@@ -1,0 +1,66 @@
+<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dokumentacja | KODOWIT</title><link rel="canonical" href="https://kodowit.szybkienarzedzia.pl/dokumentacja.html"><meta name="description" content="Słowa kluczowe i przykłady KODOWIT."><style>*{box-sizing:border-box}body{margin:0;background:#101116;color:#f4f4f6;font:16px/1.65 system-ui}a{color:inherit}header,main,footer{max-width:1120px;margin:auto;padding:24px}header{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}nav{display:flex;gap:18px;flex-wrap:wrap}nav a{text-decoration:none;color:#b8bac5}.brand{font-size:24px;font-weight:900;letter-spacing:3px;text-decoration:none}.brand b{color:#ff526a}h1{font-size:clamp(40px,7vw,76px);line-height:1.05;letter-spacing:-.045em;margin:20px 0}h2{font-size:30px;line-height:1.2}p{color:#b8bac5} .hero{padding:64px 0;display:grid;grid-template-columns:1.1fr 1fr;gap:32px;align-items:center}.tag{color:#ff8796;font-size:13px;letter-spacing:2px;font-weight:700}.btn{display:inline-block;background:#c51e40;color:white;padding:12px 20px;border-radius:9px;text-decoration:none;font-weight:700;margin:6px 8px 6px 0}.secondary{background:#252630}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}.panel,pre{background:#191b24;border:1px solid #30333e;border-radius:14px;padding:22px}pre{overflow:auto;color:#b8e6c9;font:14px/1.7 monospace;white-space:pre-wrap}footer{border-top:1px solid #30333e;color:#a5a8b4;font-size:14px}section{margin:36px 0}code{color:#f9a8b8}button{cursor:pointer}textarea{width:100%;min-height:180px;background:#191b24;color:#b8e6c9;border:1px solid #444;padding:14px;font:15px monospace}iframe{width:100%;height:260px;border:1px solid #444;background:white;border-radius:10px}@media(max-width:720px){.hero{grid-template-columns:1fr;padding:28px 0}header,main,footer{padding:18px}}
+.brand{display:flex;align-items:center;gap:10px}.hero{min-height:430px}.codewindow{border:1px solid #30333e;border-radius:18px;overflow:hidden;background:#191b24;box-shadow:0 20px 70px #0005}.windowbar{padding:12px 18px;color:#ff8796;border-bottom:1px solid #30333e}.windowbar span{float:right;color:#b8bac5;font-size:13px}.codewindow pre{border:0;margin:0;padding:30px}.panel h3{margin-top:0}a:focus-visible,button:focus-visible{outline:3px solid #ff8796;outline-offset:4px}body{background:radial-gradient(ellipse at 80% 0%,#29202d 0%,#101116 45%)}</style><link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIgMTkyIj48cmVjdCB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgcng9IjM2IiBmaWxsPSIjYzUxZTQwIi8+PHBhdGggZD0iTTU1IDE0NVY0NWg0OWEzMyAzMyAwIDAgMSAwIDY2SDc5djM0ek03OSA2OXYxOGgyNWE5IDkgMCAwIDAgMC0xOHoiIGZpbGw9IndoaXRlIi8+PC9zdmc+"><link rel="manifest" href="manifest.webmanifest"></head><body><header><a class="brand" href="index.html"><b>PI</b>AST</a><nav><a href="studio.html">Studio</a><a href="dokumentacja.html">Dokumentacja</a><a href="nauka.html">Nauka</a><a href="projekty.html">Projekty</a><a href="pobierz.html">Pobierz</a></nav></header><main><h1>Dokumentacja</h1><p><a class="btn" href="przyklady.html">50 praktycznych programów</a><a class="btn secondary" href="PODRECZNIK.md">Podręcznik Core</a></p><p>Pliki UTF-8 z rozszerzeniem .kodowit. Bloki zapisujemy w nawiasach klamrowych. Komentarze zaczynamy od //.</p><h2>Przykłady składni</h2><h3>calc</h3><pre>strona &quot;Kalkulator zakupów&quot; {
+ motyw: ciemny
+ styl: premium
+ kolor: &quot;#2563eb&quot;
+ nagłówek &quot;Koszt zakupu&quot; pole &quot;cena&quot;, &quot;Cena (zł)&quot; pole &quot;ilosc&quot;, &quot;Ilość&quot; przycisk &quot;Oblicz&quot; { kliknięcie { ustaw(&quot;suma&quot;, odczytaj(&quot;cena&quot;) * odczytaj(&quot;ilosc&quot;)) } } wynik &quot;suma&quot;, &quot;Razem (zł)&quot;
+ stopka &quot;© 2026 Kalkulator zakupów&quot;
+}</pre><h3>firma</h3><pre>strona &quot;Nova Studio&quot; {
+ motyw: ciemny
+ styl: premium
+ kolor: &quot;#8b5cf6&quot;
+ menu { logo &quot;Nova Studio&quot; link &quot;Start&quot;, &quot;#start&quot; link &quot;Więcej&quot;, &quot;#oferta&quot; }
+ sekcja &quot;start&quot; { gradient: &quot;linear-gradient(135deg, #312e81, #111827)&quot; wypełnienie: 32 zaokrąglenie: 24 nagłówek &quot;Nova Studio&quot; tekst &quot;Projektujemy rozwiązania dla biznesu&quot; link &quot;Zobacz więcej&quot;, &quot;#oferta&quot; }
+ sekcja &quot;oferta&quot; { kolumny 3 { karta &quot;Strategia&quot; { tekst &quot;Plan działania&quot; } karta &quot;Design&quot; { tekst &quot;Nowoczesny wygląd&quot; } karta &quot;Wdrożenie&quot; { tekst &quot;Gotowa witryna&quot; } } }
+ stopka &quot;© 2026 Nova Studio&quot;
+}</pre><h3>3d</h3><pre>strona &quot;Galeria 3D&quot; {
+ motyw: ciemny
+ styl: premium
+ kolor: &quot;#8b5cf6&quot;
+ nagłówek &quot;Obiekty przestrzenne&quot; scena &quot;Galeria&quot; { sześcian -3, 0, 0, 2, 2, 2, &quot;#ef4444&quot; kula 0, 0, 0, 2, 2, 2, &quot;#38bdf8&quot; walec 3, 0, 0, 2, 3, 2, &quot;#a78bfa&quot; obrót: prawda }
+ stopka &quot;© 2026 Galeria 3D&quot;
+}</pre><h2>Słowa rozpoznawane przez analizator</h2><p><code>zmienna</code>, <code>stała</code>, <code>stala</code>, <code>funkcja</code>, <code>jeżeli</code>, <code>jezeli</code>, <code>inaczej</code>, <code>dopóki</code>, <code>dopoki</code>, <code>zwróć</code>, <code>zwroc</code>, <code>prawda</code>, <code>fałsz</code>, <code>falsz</code>, <code>wypisz</code>, <code>strona</code>, <code>nagłówek</code>, <code>naglowek</code>, <code>tekst</code>, <code>przycisk</code>, <code>motyw</code>, <code>ciemny</code>, <code>jasny</code>, <code>pole</code>, <code>wynik</code>, <code>kliknięcie</code>, <code>klikniecie</code>, <code>kolor</code>, <code>odczytaj</code>, <code>ustaw</code>, <code>podtytuł</code>, <code>podtytul</code>, <code>menu</code>, <code>logo</code>, <code>link</code>, <code>sekcja</code>, <code>kolumny</code>, <code>karta</code>, <code>stopka</code>, <code>zdjęcie</code>, <code>zdjecie</code>, <code>ikona</code>, <code>styl</code>, <code>premium</code>, <code>tło</code>, <code>tlo</code>, <code>odstęp</code>, <code>odstep</code>, <code>wypełnienie</code>, <code>wypelnienie</code>, <code>zaokrąglenie</code>, <code>zaokraglenie</code>, <code>cień</code>, <code>cien</code>, <code>czcionka</code>, <code>rozmiar</code>, <code>wyrównanie</code>, <code>wyrownanie</code>, <code>barwa</code>, <code>szerokość</code>, <code>szerokosc</code>, <code>gradient</code>, <code>szkło</code>, <code>szklo</code>, <code>animacja</code>, <code>scena</code>, <code>sześcian</code>, <code>szescian</code>, <code>kula</code>, <code>walec</code>, <code>kamera</code>, <code>obrót</code>, <code>obrot</code></p><h2>Limity i bezpieczeństwo</h2><p>100 000 znaków, 128 poziomów zagnieżdżenia, 10 000 kroków, 50 stron, 4 sceny po 30 obiektów. Limity nie gwarantują pełnej izolacji. Nie uruchamiaj niezaufanego kodu.</p><section><h2>SEO (1.8)</h2><pre>strona "Moja firma" {
+  tytuł_seo: "Moja firma – oferta"
+  opis_seo: "Poznaj naszą ofertę."
+  adres_kanoniczny: "https://example.com/"
+  obraz_seo: "https://example.com/obraz.jpg"
+  nagłówek "Witaj"
+}</pre><p>Metadane wymagają stałych napisów. Eksport ZIP pozwala podać adres witryny dla sitemap.xml i robots.txt.</p></section><h2>Komponenty 1.8</h2><pre>strona "Komponenty" {
+ motyw: ciemny
+ nagłówek "Interaktywne komponenty"
+ faq [["Co to KODOWIT?", "Polski język programowania."]]
+ zakładki [["Opis", "Informacje"], ["Oferta", "Nasze usługi"]]
+ wykres [["Styczeń", 30], ["Luty", 70]]
+ postęp 65
+ powiadomienie "Witaj!"
+ okno ["Informacje", "Treść okna"]
+ rozwijane [["Menu", "Opcje"]]
+ karuzela [["Zdjęcie", "https://example.com/obraz.jpg"]]
+}</pre><h2>Rejestr 1.8</h2><pre>strona "Magazyn" {
+ motyw: ciemny
+ nagłówek "Magazyn"
+ rejestr "Produkty", ["Nazwa", "Ilość", "Cena"]
+}</pre><p>Rejestr lokalny: edycja, filtrowanie, sortowanie, import JSON, eksport JSON i CSV. W izolowanym podglądzie zapis może być niedostępny.</p><section><h2>API i JSON (2.6)</h2><p>z_json(tekst) odczytuje JSON, do_json(wartość) zapisuje JSON jako tekst. pobierz_json wykonuje asynchroniczne GET przez HTTPS, bez cookies. Serwer musi zezwalać na CORS (w podglądzie także dla origin null). Limit 1 MB, 10 sekund i 30 zapytań na uruchomienie. Nie umieszczaj kluczy API w kodzie.</p><pre>zmienna dane = z_json("{\"miasto\":\"Kraków\"}")
+wypisz(dane["miasto"])
+pobierz_json("https://jsonplaceholder.typicode.com/todos/1", dane) {
+ wypisz(dane["title"])
+} inaczej (blad) {
+ wypisz(blad)
+}</pre></section><section><h2>Animacje 4.8</h2><pre>sekcja {
+ animacja: "zanikanie"
+ czas_animacji: 700
+ opóźnienie_animacji: 150
+ efekt_najechania: "uniesienie"
+ tekst("Witaj!")
+}</pre><p>Czas w milisekundach. Dostępne także powiększenie, z_lewej, unoszenie oraz efekt blask.</p></section></main><footer>KODOWIT 5.0.1 Modern RC · Programuj po polsku. Twórz bez granic. · Wersja testowa</footer><section><h2>KODOWIT 2.3 — biblioteka standardowa</h2><pre>minimum([2, 5])
+maksimum([2, 5])
+średnia([2, 4])
+zakres(1, 5)
+połącz([1, 2], ", ")
+podziel("a,b", ",")
+zawiera([1, 2], 2)
+klucze({a: 1})
+liczba_z("42")
+tekst_z(42)
+nic
+/* komentarz wielowierszowy */</pre><p>Zakres obejmuje oba końce. Funkcje średnia, minimum i maksimum wymagają niepustej listy liczb.</p></section><section><h2>KODOWIT 2.8 – scena 3D</h2><p>Nowe bryły: piramida i torus. Każda przyjmuje x, y, z, szerokość, wysokość, głębokość i kolor. Opcja osie: prawda pokazuje osie XYZ. Przyciski Przód, Góra i Bok zatrzymują automatyczny obrót i ustawiają kamerę.</p></section><script src="shared/pwa.js"></script></body></html>

@@ -1,0 +1,6 @@
+(function(g){'use strict';
+function validate(p){if(!p||typeof p!=='object'||!p.files||typeof p.files!=='object'||Array.isArray(p.files))throw Error('Niepoprawny projekt');const keys=Object.keys(p.files);if(!keys.length||keys.length>50||!keys.includes('index'))throw Error('Wymagany plik index, maksymalnie 50 plików');let size=0;const files=Object.create(null);for(const k of keys){if(!/^[a-z0-9_-]{1,40}$/.test(k)||typeof p.files[k]!=='string')throw Error('Niepoprawny plik');size+=p.files[k].length;files[k]=p.files[k];}if(size>100000)throw Error('Limit 100 000 znaków');return {files};}
+function search(p,q){p=validate(p);if(typeof q!=='string'||!q||q.length>200)return [];return Object.entries(p.files).flatMap(([file,s])=>s.split('\n').flatMap((line,i)=>line.toLowerCase().includes(q.toLowerCase())?[{file,line:i+1,text:line.slice(0,200)}]:[])).slice(0,500);}
+function update(p,key,code){p=validate(p);if(!Object.hasOwn(p.files,key))throw Error("Brak pliku");return validate({files:{...p.files,[key]:code}});}
+function backup(p){return JSON.stringify(validate(p));}
+const api={validate,search,update,backup};if(typeof module!=='undefined')module.exports=api;else g.ProProject=api;})(globalThis);

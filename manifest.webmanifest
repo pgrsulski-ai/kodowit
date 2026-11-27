@@ -1,0 +1,1 @@
+{"name": "KODOWIT Studio", "short_name": "KODOWIT", "start_url": "./index.html", "display": "standalone", "background_color": "#101116", "theme_color": "#c51e40", "icons": [{"src": "logo.svg", "sizes": "any", "type": "image/svg+xml"}]}

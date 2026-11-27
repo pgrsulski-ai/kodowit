@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kodowit.szybkienarzedzia.pl/sitemap.xml
