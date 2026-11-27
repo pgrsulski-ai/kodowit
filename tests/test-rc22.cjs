@@ -1,0 +1,3 @@
+const assert=require('node:assert/strict'),{execFileSync}=require('node:child_process'),{eksportKodowit}=require('../eksport.js'),lessons=require('../porownanie.js');
+for(const [i,l] of lessons.entries())for(const [target,cmd,flag] of [['python','python3','-c'],['javascript','node','-e']]){const expected=['14','tak','5','12','6','tak','równe'][i];assert.equal(execFileSync(cmd,[flag,eksportKodowit(l[2],target)],{encoding:'utf8',timeout:3000}).trim(),expected);}
+assert.throws(()=>execFileSync('node',['-e',eksportKodowit('wypisz([1][3])','javascript')],{stdio:'pipe'}));console.log('RC22: 14 uruchomień, kontrola błędnego indeksu');

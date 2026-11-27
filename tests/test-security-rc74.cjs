@@ -1,0 +1,1 @@
+const fs=require('fs'),assert=require('assert');const read=p=>fs.readFileSync(p,'utf8');assert(!read('asystent.html').includes('src="ai/web-ai-ui.js"'));assert(!read('ai/web-ai-worker.js').includes('https://'));assert(read('ai-web.html').includes('wstrzymany'));assert(read('_headers').includes("object-src 'none'"));console.log('RC74 OK');
