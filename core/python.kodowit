@@ -1,0 +1,2 @@
+wypisz(python_wywolaj("math", "sqrt", 144))
+wypisz(python_wywolaj("statistics", "mean", [10,20,30]))

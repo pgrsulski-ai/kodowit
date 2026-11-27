@@ -1,0 +1,6 @@
+utworz_katalog("dane")
+zapisz_plik("dane/notatka.txt", "Witaj w KODOWIT!")
+dopisz_plik("dane/notatka.txt", " Działa zapis.")
+wypisz(czytaj_plik("dane/notatka.txt"))
+wypisz(lista_katalogu("dane"))
+wypisz(system())

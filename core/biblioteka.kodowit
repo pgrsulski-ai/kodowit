@@ -1,0 +1,6 @@
+wypisz(pierwiastek(144))
+wypisz(srednia([10,20,30]))
+wypisz(wielkie_litery("Witaj w KODOWIT"))
+wypisz(sortuj([5,2,8,1]))
+wypisz(dodaj_dni("2026-11-26", 7))
+wypisz(losuj(1,6))

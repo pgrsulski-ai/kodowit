@@ -1,0 +1,9 @@
+klasa Licznik {
+    zmienna wartosc = 0
+    funkcja dodaj(ile) {
+        ja.wartosc = ja.wartosc + ile
+        zwroc ja.wartosc
+    }
+}
+zmienna licznik = Licznik()
+wypisz(licznik.dodaj(5))

@@ -1,0 +1,2 @@
+function previewHtml(html){return html.replace('<meta charset="utf-8">',`<meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">`);}
+const api={compile,html,compileProject,previewHtml};if(typeof module!=='undefined')module.exports=api;else root.KODOWIT=api;

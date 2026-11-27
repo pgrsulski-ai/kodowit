@@ -1,0 +1,11 @@
+okno("KODOWIT 2D", 560, 400)
+plotno("gra", "#172033")
+zmienna gracz = prostokat("gra", 30, 30, 30, 30, "#34d399")
+zmienna cel = elipsa("gra", 200, 30, 30, 30, "#fbbf24")
+funkcja prawo() {
+ przesun_figure("gra", gracz, 10, 0)
+ jezeli kolizja("gra", gracz, cel) { gui_ustaw("opis", "Wygrana!") }
+}
+etykieta("opis", "Naciskaj strzałkę w prawo")
+po_klawiszu("Right", prawo)
+gui_start()

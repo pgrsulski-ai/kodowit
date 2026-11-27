@@ -1,0 +1,9 @@
+funkcja witaj(dane) {
+    zwróć ["Witaj w KODOWIT", 65]
+}
+funkcja echo(dane) {
+    zwróć dane
+}
+api_trasa("GET", "/witaj", witaj)
+api_trasa("POST", "/echo", echo)
+api_start(8080)

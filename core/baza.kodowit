@@ -1,0 +1,3 @@
+baza_wykonaj("kontakty.db", "CREATE TABLE IF NOT EXISTS kontakty (imie TEXT)")
+baza_wykonaj("kontakty.db", "INSERT INTO kontakty VALUES (?)", ["Anna"])
+wypisz(baza_pobierz("kontakty.db", "SELECT imie FROM kontakty"))

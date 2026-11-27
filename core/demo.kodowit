@@ -1,0 +1,7 @@
+funkcja silnia(n) {
+    jeżeli n <= 1 { zwróć 1 }
+    zwróć n * silnia(n - 1)
+}
+dla i w zakres(1, 6) {
+    wypisz(silnia(i))
+}
